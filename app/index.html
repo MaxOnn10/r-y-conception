@@ -4,13 +4,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>R&Y Conception</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="js/image-compare-viewer.min.js" as="script">
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="stylesheet" href="css/image-compare-viewer.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-wrapper">
+                    <ul class="header__top-info">
+                        <li class="header__top-item header__top-phone">
+                            <img class="header__info-icon" src="images/icons/phone.svg" alt="">
+                            <a href="tel:+12488321504">+12488321504</a>
+                        </li>
+                        <li class="header__top-item header__top-time">
+                            <img class="header__info-icon" src="images/icons/time.svg" alt="">
+                            Mon - Fri: 9:00 - 6:00 / Closed on Weekends
+                        </li>
+                        <li class="header__top-item header__top-email">
+                            <img class="header__info-icon" src="images/icons/mail.svg" alt="">
+                            <a href="mailto:Uliamintenko@gmail.com">Uliamintenko@gmail.com</a>
 
-    <script src="js/main.min.js"></script>
+                        </li>
+                    </ul>
+                    <div class="header__top-socials">
+                        <a class="header__socials-link" href="">
+                            <img class="header__socials-icon" src="images/icons/facebook.svg" alt="">
+                        </a>
+                        <a class="header__socials-link" href="">
+                            <img class="header__socials-icon" src="images/icons/twitter.svg" alt="">
+                        </a>
+                        <a class="header__socials-link" href="">
+                            <img class="header__socials-icon" src="images/icons/linkedin.svg" alt="">
+                        </a>
+                        <a class="header__socials-link" href="">
+                            <img class="header__socials-icon" src="images/icons/houzz.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav-wrapper">
+            <div class="container">
+                <div class="header__nav-container">
+                    <div class="header__logo-container">
+                        <a href=""><img class="header__logo" src="images/logo.png" width="75" height="42" alt=""></a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__list-item"><a class="header__list-link" href="">About Us</a></li>
+                            <li class="header__list-item"><a class="header__list-link" href="">Services</a></li>
+                            <li class="header__list-item"><a class="header__list-link" href="">Location</a></li>
+                            <li class="header__list-item"><a class="header__list-link" href="">Checklist</a></li>
+                            <li class="header__list-item"><a class="header__list-link" href="">FAQ</a></li>
+                            <li class="header__list-item"><a class="header__list-link" href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__button-container">
+                        <button class="btn-reset header__button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="promo__wrapper">
+                    <div class="promo__text">
+                        <p class="promo__suptitle">
+                            The best house cleaning in Detroit
+                        </p>
+                        <h1 class="promo__title">Detroit's Premier <span class="promo__title-span">House Cleaning
+                                Service</span></h1>
+                        <p class="promo__subtitle">
+                            Get $30 on Your First Cleaning
+                        </p>
+                        <button class="btn-reset promo__button">
+                            Book your first clean
+                        </button>
+                        <div class="promo__call">
+                            <img class="promo__call-img" src="images/icons/promo.svg" alt="">
+                            <div class="promo__call-inner">
+                                <p class="promo__call-text">Call us now</p>
+                                <a class="promo__call-tel" href="tel:+12488321504">+12488321504</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo__form">
+                        <form class="promo__form-content form">
+                            <label class="promo__form-title">Get a Quote Today</label>
+                            <input class="promo__form-input" type="text" placeholder="First Name*">
+                            <input class="promo__form-input" type="text" placeholder="Last Name*">
+                            <input class="promo__form-input" type="tel" placeholder="Phone*">
+                            <input class="promo__form-input" type="email" placeholder="Email*">
+                            <input class="btn-reset promo__form-button" type="submit" value="Get My Quote">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="who">
+            <div class="container">
+                <h2 class="who__title">
+                    Who We Are
+                </h2>
+                <p class="who__text">
+                    Cleanzen is the most convenient platform that connects independent cleaning professionals with
+                    customers. All of Cleanzen cleaners are insured professionals with many years of experience, and
+                    have passed a background check. At Cleanzen, we take the hassle out of cleaning your house.
+                    All of our cleaners travel with their own cleaning equipment and products. They arrive on time and
+                    ready to produce the clean results you need in your home.
+                    <br>
+                    <br>
+                    We provide service every day of the week at times that are convenient for you. We offer the full
+                    range of customizable cleaning services that you may need now and in the future, and our team is
+                    ready to begin working for you today.
+                </p>
+                <button class="btn-reset who__button">
+                    <img class="who__button-icon" src="images/icons/calendar.svg" alt="">
+                    Book Now
+                </button>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">
+                    What Our Customers Say
+                </h2>
+                <div class="reviews__wrapper">
+                    <div class="reviews__item">
+                        <div class="reviews__item-container">
+                            <div class="reviews__item-top">
+                                <div class="reviews__top-name">
+                                    <img class="reviews__top-img" src="images/reviews-1.png" alt="">
+                                    <p class="reviews__name">
+                                        Kenny Cortz
+                                        <br>
+                                        <span class="reviews__description">Real Estate Investor</span>
+                                    </p>
+                                </div>
+                                <div class="reviews__top-stars">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="reviews__item-bottom">
+                                PSC did a great job on our Townhome, we would definitely use them again!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-container">
+                            <div class="reviews__item-top">
+                                <div class="reviews__top-name">
+                                    <img class="reviews__top-img" src="images/reviews-2.png" alt="">
+                                    <p class="reviews__name">
+                                        Muying Chen
+                                        <br>
+                                        <span class="reviews__description">Home Owner</span>
+                                    </p>
+                                </div>
+                                <div class="reviews__top-stars">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="reviews__item-bottom">
+                                My cleaner was on time and went above and beyond for the cleaning. She left my place
+                                spotlessly clean. I will definitely use them again for my cleaning needs next time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-container">
+                            <div class="reviews__item-top">
+                                <div class="reviews__top-name">
+                                    <img class="reviews__top-img" src="images/reviews-3.png" alt="">
+                                    <p class="reviews__name">
+                                        Brian Green
+                                        <br>
+                                        <span class="reviews__description">Home Owner</span>
+                                    </p>
+                                </div>
+                                <div class="reviews__top-stars">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                    <img class="reviews__top-star" src="images/icons/star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="reviews__item-bottom">
+                                We started with R&Y Conception 1 month ago. I've never hired a cleaning company before
+                                and wasn't sure what to expect. We have Jessica come to us on a weekly basis. she is
+                                easy to communicate with and has great attention to detail. Definitely meets my high
+                                expectations. I also like that she gets paid a fair and livable wage from the company.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <h2 class="work__title">
+                    View Our Work
+                </h2>
+                <div class="work__wrapper">
+                    <div id="image-compare" class="image-compare">
+                        <img src="images/before.jpg" alt="" />
+                        <img src="images/after.jpeg" alt="" />
+                    </div>
+
+                    <div id="image-compare1" class="image-compare">
+                        <img src="images/before.jpg" alt="" />
+                        <img src="images/after.jpeg" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="how">
+            <div class="container">
+                <h2 class="how__title">
+                    How it works
+                </h2>
+                <h3 class="how__subtitle">
+                    Easiest House Cleaning Service in Seattle
+                </h3>
+                <div class="how__items">
+                    <div class="how__item">
+                        <img class="how__item-img" src="images/icons/calendar-2.svg" alt="">
+                        <h4 class="how__item-title">Easy Online Booking</h4>
+                        <p class="how__item-text">Book with us in less than 1 minute</p>
+                    </div>
+                    <div class="how__item">
+                        <img class="how__item-img" src="images/icons/hands.svg" alt="">
+                        <h4 class="how__item-title">Bonded & Insured</h4>
+                        <p class="how__item-text">Bonded and Insured with high coverage in the unlikely event of an
+                            accident</p>
+                    </div>
+                    <div class="how__item">
+                        <img class="how__item-img" src="images/icons/girl.svg" alt="">
+                        <h4 class="how__item-title">Experienced Staff</h4>
+                        <p class="how__item-text">We require staff to have at least 2 years of cleaning experience and
+                            multiple referrals</p>
+                    </div>
+                    <div class="how__item">
+                        <img class="how__item-img" src="images/icons/spray.svg" alt="">
+                        <h4 class="how__item-title">Satisfaction Guaranteed or We'll Make it Right</h4>
+                        <p class="how__item-text">We work until you're satisfied with our 24 hour Satisfaction Guarantee
+                        </p>
+                    </div>
+                </div>
+                <p class="how__bottom-text">
+                    Home and Office Deep Cleaning Monday – Friday!<button class="btn-reset how__bottom-button">Book Instantly</button>
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
+    <script defer src="js/image-compare-viewer.min.js"></script>
+    <script defer src="js/main.js"></script>
 </body>
 
 </html>

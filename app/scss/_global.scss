@@ -8,11 +8,13 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: "Times New Roman";
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 img {
     max-width: 100%;
+    object-fit: cover;
+    height: auto;
 }
 a {
     text-decoration: none;
@@ -36,6 +38,14 @@ h6 {
     margin: 0;
     font-size: inherit;
 }
+h2 {
+    color: #000;
+    font-size: 36px;
+    line-height: 1.36em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .container {
     max-width: 1170px;
@@ -48,7 +58,7 @@ h6 {
 .is-outer {
     position: relative !important; // stylelint-disable-line declaration-no-important
     left: -9999px !important; // stylelint-disable-line declaration-no-important
-}  
+}
 .site-container {
     overflow: hidden;
 }
