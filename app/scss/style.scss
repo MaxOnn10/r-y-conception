@@ -198,6 +198,34 @@
         position: relative;
     }
     &__nav {
+
+    }
+    &__nav--active {
+        visibility: visible;
+        opacity: 1;
+        right: 0;
+        .header__nav-list {
+            flex-direction: column;
+        }
+        .header__nav{
+            display: flex;
+            position: fixed;
+            right: -250px;
+            top: 0;
+            height: 100vh;
+            background-color: #fff;
+            max-width: 100%;
+            width: 30%;
+            padding-top: 100px;
+            padding-left: 40px;
+            flex-direction: column;
+            -webkit-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 10;
+        }
     }
     &__nav-container {
         display: grid;
