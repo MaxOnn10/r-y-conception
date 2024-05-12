@@ -280,6 +280,7 @@
     &__item-top {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 30px;
     }
     &__item-container {
@@ -522,6 +523,7 @@
     &__item {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding-top: 35px;
         border-bottom: 1px solid #eee;
     }
@@ -567,6 +569,7 @@
         &__top {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-bottom: 45px;
         }
         &__top-item {
@@ -695,10 +698,10 @@
     padding-top: 50px;
     .accordion{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr;
+        // gap: 30px;
     }
-    .accordion-item{
+    .fancybox__slide{
         height: fit-content;
     }
 }

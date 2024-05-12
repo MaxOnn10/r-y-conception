@@ -32,4 +32,8 @@ viewers.forEach((element) => {
   let view = new ImageCompare(element).mount();
 });
 
-new Accordion('.accordion-container');
+Fancybox.bind("[data-fancybox]", {
+  autoFocus: false,
+  dragToClose: false,
+  groupAttr: false
+});

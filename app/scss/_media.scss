@@ -2,6 +2,50 @@
  //tablet
 }
 
+@media (max-width: 768.98px) {
+    .header{
+        &__top{
+            display: none;
+        }
+        &__nav{
+            display: none;
+        }
+        &__nav-container{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .promo{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+    .about{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__content{
+            order: -1;
+        }
+    }
+    .services{
+        &__button-container{
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+        .tabs__top{
+            flex-wrap: wrap;
+        }
+        .tab__content-item{
+            grid-template-columns: 1fr;
+        }
+        .tab__content-text--right{
+            padding-top: 15px;
+            padding-left: 0;
+        }
+    }
+}
+
 @media (max-width: 639.98px) {
  //mobile
 }

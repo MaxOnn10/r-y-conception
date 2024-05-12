@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="preload" href="js/image-compare-viewer.min.js" as="script">
     <link rel="preload" href="js/main.js" as="script">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/image-compare-viewer.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -72,7 +73,7 @@
                         </ul>
                     </nav>
                     <div class="header__button-container">
-                        <button class="btn-reset header__button">
+                        <button class="btn-reset header__button" data-fancybox="dialog" data-src="#dialog-content">
                             Book Now
                         </button>
                     </div>
@@ -81,6 +82,18 @@
         </div>
     </header>
     <main>
+        <div id="dialog-content" class="modal" style="display:none;max-width:fit-content;">
+            <div class="promo__form">
+                <form class="promo__form-content form">
+                    <label class="promo__form-title">Get a Quote Today</label>
+                    <input class="promo__form-input" type="text" placeholder="First Name*">
+                    <input class="promo__form-input" type="text" placeholder="Last Name*">
+                    <input class="promo__form-input" type="tel" placeholder="Phone*">
+                    <input class="promo__form-input" type="email" placeholder="Email*">
+                    <input class="btn-reset promo__form-button" type="submit" value="Get My Quote">
+                </form>
+            </div>
+        </div>
         <section class="promo">
             <div class="container">
                 <div class="promo__wrapper">
@@ -93,7 +106,7 @@
                         <p class="promo__subtitle">
                             Get $30 on Your First Cleaning
                         </p>
-                        <button class="btn-reset promo__button">
+                        <button class="btn-reset promo__button" data-fancybox="dialog" data-src="#dialog-content">
                             Book your first clean
                         </button>
                         <div class="promo__call">
@@ -135,7 +148,7 @@
                     range of customizable cleaning services that you may need now and in the future, and our team is
                     ready to begin working for you today.
                 </p>
-                <button class="btn-reset who__button">
+                <button class="btn-reset who__button" data-fancybox="dialog" data-src="#dialog-content">
                     <img class="who__button-icon" src="images/icons/calendar.svg" alt="">
                     Book Now
                 </button>
@@ -283,7 +296,7 @@
                     </div>
                 </div>
                 <p class="how__bottom-text">
-                    Home and Office Deep Cleaning Monday – Friday!<button class="btn-reset how__bottom-button">Book
+                    Home and Office Deep Cleaning Monday – Friday!<button class="btn-reset how__bottom-button" data-fancybox="dialog" data-src="#dialog-content">Book
                         Instantly</button>
                 </p>
             </div>
@@ -305,7 +318,7 @@
                             quality of service to our customers. If you're not satisfied, we provide a 24 hours
                             satisfaction guarantee where we'll go back and make it right.
                         </p>
-                        <button class="btn-reset about__button">
+                        <button class="btn-reset about__button" data-fancybox="dialog" data-src="#dialog-content">
                             Book Now
                         </button>
                     </div>
@@ -335,7 +348,7 @@
                             </h4>
                         </div>
                         <div class="services__button-container">
-                            <button class="btn-reset services__item-button">
+                            <button class="btn-reset services__item-button" data-fancybox="dialog" data-src="#dialog-content">
                                 View more
                             </button>
                         </div>
@@ -353,7 +366,7 @@
                             </h4>
                         </div>
                         <div class="services__button-container">
-                            <button class="btn-reset services__item-button">
+                            <button class="btn-reset services__item-button" data-fancybox="dialog" data-src="#dialog-content">
                                 View more
                             </button>
                         </div>
@@ -371,7 +384,7 @@
                             </h4>
                         </div>
                         <div class="services__button-container">
-                            <button class="btn-reset services__item-button">
+                            <button class="btn-reset services__item-button" data-fancybox="dialog" data-src="#dialog-content">
                                 View more
                             </button>
                         </div>
@@ -391,7 +404,7 @@
                             </h4>
                         </div>
                         <div class="services__button-container">
-                            <button class="btn-reset services__item-button">
+                            <button class="btn-reset services__item-button" data-fancybox="dialog" data-src="#dialog-content">
                                 View more
                             </button>
                         </div>
@@ -410,7 +423,7 @@
                             </h4>
                         </div>
                         <div class="services__button-container">
-                            <button class="btn-reset services__item-button">
+                            <button class="btn-reset services__item-button" data-fancybox="dialog" data-src="#dialog-content">
                                 View more
                             </button>
                         </div>
@@ -769,13 +782,111 @@
                 <h2 class="faq__title">
                     Frequently Asked Questions
                 </h2>
-                
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How can I register for a service?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                To book an appointment, head over to the booking page and fill out the form. If you have
+                                any questions, we would be happy to answer them via phone at (206) 457-1954 or email
+                                info@pugetsoundcleaners.com.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Can I adjust the schedule for cleaning?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Yes! After booking, if you realize the time doesn't work for you, you can always
+                                reschedule in our online portal or call us before your appointment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What kind of products you use?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                We try to use environmentally friendly cleaning products in all our cleans. That being
+                                said, there are times when we use specialized cleaning products during cleaning to
+                                achieve a higher level of cleanliness. If you would like for us to use a preferred
+                                cleaning product, please let us know and we would be happy to accommodate your request.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What if I don’t like the service?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                No problem! If anything, we appreciate the honesty. With our 24 hour satisfaction guarantee, if you're not satisfied after the clean you have received, we will go back and focus on the areas where we fell short.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Where can I find your pricing?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Because no 2 jobs are the same, our pricing is tailored to your cleaning request. To find out more, please visit our booking page and fill out the form. We'll get back to you promptly and tell you more about our pricing.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                What if something is broken during clean?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Our cleaners and us have general liability insurance for this very reason. Cleaners will never enter your home or business without a background check and insurance. In the unlikely event where a claim needs to be filed, please let us know and we will contact our insurance providers immediately.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </section>
+        <section class="footer">
+
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js"
+        integrity="sha512-OP5UDNTrL0tjvwTB5LHB0I6gTZNNW3zxjq1eg3ezPRGGMmWycR0hI9LucqotK97avbFJ0TiPc2lnJoHXqYKvRQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="js/image-compare-viewer.min.js"></script>
     <script defer src="js/main.js"></script>
 </body>
