@@ -21,6 +21,11 @@
 
 <body>
     <header class="header">
+        <div class="header__burger-container">
+            <button class="header__burger" aria-label="burger-menu">
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
         <div class="header__top">
             <div class="container">
                 <div class="header__top-wrapper">
@@ -36,7 +41,6 @@
                         <li class="header__top-item header__top-email">
                             <img class="header__info-icon" src="images/icons/mail.svg" alt="">
                             <a href="mailto:Uliamintenko@gmail.com">Uliamintenko@gmail.com</a>
-
                         </li>
                     </ul>
                     <!-- <div class="header__top-socials">
@@ -339,7 +343,7 @@
                 <div class="services__items">
                     <div class="services__item">
                         <div class="services__item-wrapper">
-                            <img class="services__item-img" src="images/icons/" alt="">
+                            <img class="services__item-img" src="images/icons/deep-cleaning.svg" alt="">
                             <h4 class="services__item-name">Deep Cleaning
                                 <br>
                                 <span class="services__item-description">
@@ -358,7 +362,7 @@
                     </div>
                     <div class="services__item">
                         <div class="services__item-wrapper">
-                            <img class="services__item-img" src="images/icons/" alt="">
+                            <img class="services__item-img" src="images/icons/airbnb-cleaning.svg" alt="">
                             <h4 class="services__item-name">Airbnb Cleaning
                                 <br>
                                 <span class="services__item-description">
@@ -377,7 +381,7 @@
                     </div>
                     <div class="services__item">
                         <div class="services__item-wrapper">
-                            <img class="services__item-img" src="images/icons/" alt="">
+                            <img class="services__item-img" src="images/icons/move-cleaning.svg" alt="">
                             <h4 class="services__item-name">Move Out Cleaning
                                 <br>
                                 <span class="services__item-description">
@@ -396,7 +400,7 @@
                     </div>
                     <div class="services__item">
                         <div class="services__item-wrapper">
-                            <img class="services__item-img" src="images/icons/" alt="">
+                            <img class="services__item-img" src="images/icons/construction-cleaning.svg" alt="">
                             <h4 class="services__item-name">Post Construction Cleaning
                                 <br>
                                 <span class="services__item-description">
@@ -417,7 +421,7 @@
                     </div>
                     <div class="services__item">
                         <div class="services__item-wrapper">
-                            <img class="services__item-img" src="images/icons/" alt="">
+                            <img class="services__item-img" src="images/icons/maid-cleaning.svg" alt="">
                             <h4 class="services__item-name">Maid Services
                                 <br>
                                 <span class="services__item-description">
@@ -752,7 +756,7 @@
             <div class="container">
                 <div class="advantages__cards">
                     <div class="advantages__card">
-                        <img class="advantages__card-img" src="" alt="">
+                        <img class="advantages__card-img" src="images/icons/goal.svg" alt="">
                         <h3 class="advantages__card-title">
                             Our Goal
                         </h3>
@@ -763,7 +767,7 @@
                     </div>
 
                     <div class="advantages__card">
-                        <img class="advantages__card-img" src="" alt="">
+                        <img class="advantages__card-img" src="images/icons/group.svg" alt="">
                         <h3 class="advantages__card-title">
                             Our Recruiting Process
                         </h3>
@@ -774,7 +778,7 @@
                     </div>
 
                     <div class="advantages__card">
-                        <img class="advantages__card-img" src="" alt="">
+                        <img class="advantages__card-img" src="images/icons/sweeper.svg" alt="">
                         <h3 class="advantages__card-title">
                             Our Impact
                         </h3>
@@ -789,10 +793,10 @@
 
         <section class="map" id="map">
             <div class="container">
-                <iframe class="map__content"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94352.7519681272!2d-83.18160505120653!3d42.35268150043863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824ca0110cb1d75%3A0x5776864e35b9c4d2!2z0JTQtdGC0YDQvtC50YIsINCc0LjRh9C40LPQsNC9LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1715534183641!5m2!1sru!2sua"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map__content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4400.996601568913!2d-83.2482539233898!3d42.591104978977334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c0aa486aaaab%3A0x2a89fd0d2b24f7f!2s41000%20Woodward%20Ave%20Suite%20350E%2C%20Bloomfield%20Hills%2C%20MI%2048304%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sua!4v1715538045025!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="map__locations">
+                    Locations: Troy, Birmingham, West Bloomfield, Novi, Rochester, Clinton Twp.
+                </p>
             </div>
         </section>
 
@@ -904,7 +908,27 @@
             </div>
         </section>
         <section class="footer">
-            
+            <div class="container">
+                <div class="footer__top">
+                    <img class="footer__top-logo" src="images/logo.png" width="75" height="74" alt="">
+                    <p class="footer__top-text">
+                        R&Y Conception is a cleaning referral agency located in Detroit, Michigan. Puget Sound
+                        R&Y is not the employer of the house cleaner referred to you. We refer highly vetted
+                        R&Y in the area to our customers. We pride ourselves in providing livable pay to our
+                        R&Y and quality service to our customers.
+                    </p>
+                    <p class="footer__top-contacts">
+                        Mail: <a href="mailto:Uliamintenko@gmail.com">Uliamintenko@gmail.com</a>
+                        <br>
+                        Call: <a href="tel:+12488321504">+12488321504</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__bottom-copyright">
+                    © 2024 - R&Y Conception. Copyrights Reserved 
+                </p>
+            </div>
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

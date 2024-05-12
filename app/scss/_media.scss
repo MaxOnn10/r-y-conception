@@ -4,16 +4,36 @@
 
 @media (max-width: 768.98px) {
     .header{
+        &__burger-container {
+			display: block;
+			position: fixed;
+			top: 22px;
+			right: 16px;
+			z-index: 999;
+		}
         &__top{
             display: none;
         }
         &__nav{
             display: none;
         }
+        &__nav--active{
+            position: fixed;
+            display: block;
+            background: #fff;
+            width: 30%;
+            height: 100vh;
+            .header__nav-list{
+                flex-direction: column;
+            }
+        }
         &__nav-container{
             display: flex;
             justify-content: space-between;
         }
+        &__button-container{
+            display: none;
+        }        
     }
     .promo{
         &__wrapper{
