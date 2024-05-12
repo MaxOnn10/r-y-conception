@@ -31,3 +31,5 @@ const options = {
 viewers.forEach((element) => {
   let view = new ImageCompare(element).mount();
 });
+
+new Accordion('.accordion-container');

@@ -517,7 +517,7 @@
         text-align: left;
         border-top: 1px solid #eee;
         border-radius: 1px;
-        margin-bottom: 50px;    
+        margin-bottom: 100px;
     }
     &__item {
         display: flex;
@@ -583,23 +583,123 @@
             font-weight: 700;
             margin-bottom: 8px;
         }
-        &__top-button.active{
+        &__top-button.active {
             color: orange;
         }
     }
-    .tab{
-        &__content-title{
+    .tab {
+        &-content{
+            border-bottom: 1px solid #eee;
+        }
+        &__content-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 100px;
+        }
+        &__content-title {
             font-size: 16px;
             line-height: 30px;
             text-align: center;
             margin-bottom: 150px;
         }
-        &__content-text{
-
+        &__content-subtitle {
+            letter-spacing: 0.15em;
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: 700;
+            margin-bottom: 25px;
         }
-        &__content-subtitle{
-            
+        &__content-img--reverse {
+            order: -1;
         }
+        &__list-item {
+            font-size: 13px;
+            line-height: 20px;
+            color: #5c5c5c;
+            list-style: none;
+            padding-left: 50px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        &__content-text--left {
+            padding-right: 40px;
+        }
+        &__content-text--right {
+            padding-left: 85px;
+        }
+        &__list-item--do::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 8px;
+            width: 16px;
+            height: 12px;
+            background: url("../images/icons/checkmark.svg") no-repeat center center/cover;
+            background-size: cover;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            display: inline-block;
+            vertical-align: top;
+            z-index: 1;
+            -webkit-background-size: 100% 100%;
+            background-size: 100%;
+        }
+        &__list-item--dont {
+            text-decoration: line-through;
+        }
+        &__list-item--dont::before {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: 7px;
+            width: 17px;
+            height: 17px;
+            background: url("../images/icons/checkmark-del.svg") no-repeat center center/cover;
+            background-size: cover;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            display: inline-block;
+            vertical-align: top;
+            z-index: 1;
+            -webkit-background-size: 100% 100%;
+            background-size: 100%;
+        }
+    }
+}
+.advantages {
+    padding-top: 55px;
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+    &__card {
+        border-bottom: 5px solid #0071a8;
+        padding: 70px 40px;
+        border-radius: 5px;
+        box-shadow: 0 20px 60px -10px rgba(0, 0, 0, .1);
+        transition: all ease 0.3s;
+    }
+    &__card-title {
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    &__card-text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+.faq{
+    padding-top: 50px;
+    .accordion{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .accordion-item{
+        height: fit-content;
     }
 }
 @import "media";
