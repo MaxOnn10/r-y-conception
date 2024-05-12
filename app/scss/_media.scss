@@ -34,15 +34,35 @@
             padding: 15px 0;
         }
         .tabs__top{
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
         }
         .tab__content-item{
             grid-template-columns: 1fr;
+            margin-bottom: 50px;
+        }
+        .tab__content-title{
+            margin-bottom: 50px;
         }
         .tab__content-text--right{
             padding-top: 15px;
             padding-left: 0;
         }
+        .tab__content-img--reverse{
+            order: 0;
+        }
+    }
+    .work__wrapper{
+        grid-template-columns: 1fr;
+    }
+    .work .image-compare{
+        height: 300px;
+        width: 100%;
+    }
+    .promo__form{
+        margin: 0 auto;
+        margin-top: 50px;
     }
 }
 
