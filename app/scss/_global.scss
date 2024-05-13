@@ -69,6 +69,9 @@ h2 {
     border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
 }
 .btn-reset {
+    transition: all ease .5s;
+    touch-action: manipulation;
+    user-select: none;
     border: none;
     background: transparent;
     cursor: pointer;
