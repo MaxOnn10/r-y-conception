@@ -159,6 +159,15 @@
             width: 50%;
             top: 47%;
         }
+        &__top-wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__top-item{
+            margin-bottom: 10px;
+        }
+        &__button-container--active{
+            bottom: 25%;
+        }
     }
     .footer{
         &__top-text{

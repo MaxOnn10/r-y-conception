@@ -186,6 +186,9 @@
     &__info-icon {
         margin-right: 10px;
     }
+    &__info-link:not(:last-child){
+        padding-right: 15px;
+    }
     &__socials-link:not(:last-child) {
         margin-right: 16px;
     }
@@ -929,7 +932,6 @@
     &__top {
     }
     &__top-logo {
-        filter: grayscale(1);
         object-fit: cover;
         height: auto;
         margin-bottom: 15px;
@@ -940,6 +942,9 @@
     }
     &__top-contacts {
         margin-bottom: 15px;
+    }
+    &__info-link:not(:last-child){
+        padding-right: 15px;
     }
     &__bottom {
         padding: 20px 0;
