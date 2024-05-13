@@ -8,7 +8,7 @@ $token = "7036028879:AAH0tz3lHDdVSwbh5hcwwDyzuL4AZi_Sa6Y";
 $chat_id = "688592065";
 $arr = array(
   'Имя пользователя: ' => $name,
-  'Фамилия пользователя: ' => $name,
+  'Фамилия пользователя: ' => $surname,
   'Телефон: ' => $phone,
   'Email' => $email
 );
