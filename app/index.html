@@ -89,12 +89,12 @@
     <main>
         <div id="dialog-content" class="modal" style="display:none;max-width:fit-content;height: fit-content;">
             <div class="promo__form popup">
-                <form class="promo__form-content form">
+                <form action="php/telegram.php" method="post" class="promo__form-content form">
                     <label class="promo__form-title">Get a Quote Today</label>
-                    <input class="promo__form-input" type="text" placeholder="First Name*">
-                    <input class="promo__form-input" type="text" placeholder="Last Name*">
-                    <input class="promo__form-input" type="tel" placeholder="Phone*">
-                    <input class="promo__form-input" type="email" placeholder="Email*">
+                    <input class="promo__form-input" name="name" type="text" placeholder="First Name*">
+                    <input class="promo__form-input" name="surname" type="text" placeholder="Last Name*">
+                    <input class="promo__form-input" name="phone" type="tel" placeholder="Phone*">
+                    <input class="promo__form-input" name="email" type="email" placeholder="Email*">
                     <input class="btn-reset promo__form-button" type="submit" value="Get My Quote">
                 </form>
             </div>
