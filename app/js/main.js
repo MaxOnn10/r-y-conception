@@ -13,8 +13,6 @@ burgerMenu.addEventListener('click', () => {
   nav.classList.toggle('header__nav--active');
   headerButton.classList.toggle('header__button-container--active');
   headerTop.classList.toggle('header__top--active');
-  // headerTop.classList.toggle('header__top--active');
-  // body.classList.toggle('disable-scroll');
 });
 
 burgerItem.forEach(function (item) {
