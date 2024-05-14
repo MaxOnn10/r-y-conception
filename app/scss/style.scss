@@ -186,7 +186,7 @@
     &__info-icon {
         margin-right: 10px;
     }
-    &__info-link:not(:last-child){
+    &__info-link:not(:last-child) {
         padding-right: 15px;
     }
     &__socials-link:not(:last-child) {
@@ -257,7 +257,7 @@
         -o-transition: width 0.5s ease-out;
         transition: width 0.5s ease-out;
     }
-    &__list-link:hover{
+    &__list-link:hover {
         color: #a4957d;
     }
     &__list-link:hover::after {
@@ -374,6 +374,13 @@
         box-shadow: 0px 0px 0px 0px #ffffff;
         margin-top: 75px;
     }
+    &__form-item {
+        max-width: 312px;
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
     &__form-title {
         color: #000;
         text-align: center;
@@ -396,9 +403,6 @@
         font-size: 14px;
         font-weight: 400;
         background-clip: inherit;
-        &:not(:last-child) {
-            margin-bottom: 16px;
-        }
     }
     &__form-button {
         background-color: #303030;
@@ -944,7 +948,7 @@
     &__top-contacts {
         margin-bottom: 15px;
     }
-    &__info-link:not(:last-child){
+    &__info-link:not(:last-child) {
         padding-right: 15px;
     }
     &__bottom {
@@ -965,15 +969,15 @@
     padding-top: 0;
     padding-bottom: 0;
 }
-.btn-hover:hover{
+.btn-hover:hover {
     transform: translate3d(0, -5px, 0);
     opacity: 1 !important;
     box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.25);
 }
-.text-hover{
-    transition: color .3s linear;
+.text-hover {
+    transition: color 0.3s linear;
 }
-.text-hover:hover{
+.text-hover:hover {
     // text-shadow: 0 0 17px #000;
     color: #a4957d;
 }
