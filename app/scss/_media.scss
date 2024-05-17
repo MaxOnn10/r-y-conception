@@ -154,6 +154,15 @@
     .popup{
         margin-top: 0;
     }
+    .submitting{
+        &__text{
+            font-size: 32px;
+            line-height: 130%;
+        }
+        &__link{
+            top: 55%;
+        }
+    }
 }
 
 @media (max-width: 639.98px) {

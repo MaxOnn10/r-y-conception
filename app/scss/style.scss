@@ -981,4 +981,30 @@
     // text-shadow: 0 0 17px #000;
     color: #a4957d;
 }
+.submitting {
+    height: 100vh;
+    position: relative;
+    &__text {
+        padding: 0 15px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 175%;
+        text-align: center;
+        color: #6c7074;
+        width: 100%;
+    }
+    &__link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 175%;
+    }
+}
 @import "media";

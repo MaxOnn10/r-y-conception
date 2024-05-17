@@ -143,7 +143,9 @@ document.querySelectorAll('.form').forEach((form) => {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
             console.log('Send');
-            alert("Thank you, your application has been sent")
+            setTimeout(function () {
+              window.location.href = '/submitting.html';
+            }, 3000);
           }
         }
       }
